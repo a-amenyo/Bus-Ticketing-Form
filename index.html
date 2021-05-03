@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap"
+    rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+    <title>Bus Ticketing System </title>
+  
+  </head>
+  <body>
+    <div class="root">
+      <div class="container">
+          <h1 class="title">
+              Bus Ticketing Form
+          </h1>
+          <div class="main">
+          <div class="username">
+              <label for="" >
+                  Full Name
+              </label><br>
+              <input id="fName" type="text"  placeholder=" your full name" >
+          </div>    
+          
+          <div class="trip">
+          <input type="radio" name="trip" id="oneway" >One-way Trip</input> <br>
+          <input type="radio" name="trip" id="roundtrip" >Round Trip</input>
+          </div>
+          <div class="booking-date">
+              <label for="">Date of Trip</label><br>
+              <input type="date" id="date" >
+          </div>
+          <div class="number-people">
+              <label for="">Number of People</label><br>
+              <input type="number" min="1" max="45"  id="num-people" >
+          </div>
+          </div>
+          <div class="feedback">
+              <label for="">Message</label><br>
+              <textarea name="comment" id="" cols="30" rows="10"  placeholder=" please type your message here.. " ></textarea>
+          </div>
+          <button id="submit">Submit</button>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
